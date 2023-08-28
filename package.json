@@ -1,0 +1,22 @@
+{
+    "name": "knex",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node index.js",
+        "knex": "knex",
+        "make": "knex migrate:make todos",
+        "up": "knex migrate:latest",
+        "down": "knex migrate:down",
+        "seed": "knex seed:make todos",
+        "reseed": "knex seed:run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "better-sqlite3": "^8.5.2",
+        "knex": "^2.5.1"
+    }
+}
