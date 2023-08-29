@@ -15,6 +15,8 @@ const selectData = (
     options = { fields: [], filteringConditions: [] },
 ) => {
     const { fields, filteringConditions } = options
+    // const States = db('states')
+    // const Cities = db('cities')
     return db(tableName)
         .select(fields)
         .where(builder => {
